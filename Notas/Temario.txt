@@ -1,0 +1,77 @@
+HolaMundo:
+- Formulario
+- Labels
+
+Calculadora
+- Eventos
+- Botones
+- TextBox
+- RadioButton
+- CheckBox
+- Listas
+- Selectores
+- ComboBox
+
+Inscripciones
+- Forms
+- Validaciones
+
+Archivos
+- Links (HyperLink) / Navegar entre vistas
+- Archivos
+- Calendarios/Contador/Navegacion
+
+CRUDUsuarios
+- Alta, baja, modificacion, busqueda
+- Conexion a bdd
+
+CRUDUsuarios2
+- Conexion a bdd mediante ConnectionStrings
+- CRUD
+
+CRUDArticulos
+- multiples tablas
+- sentencias SQL con alias 
+
+GridView
+- Arrastrar tablas
+- Dar formato a tablas
+
+-GridMultiple
+- CRUD mutiples tablas
+- Personalizacion de columnas
+- Personalizacion de filas
+- Extraer datos de la tabla
+
+Validaciones
+- Validaciones de campos, mails, rangos, etc
+
+Catalogo
+- Recuperar imagenes del servidor
+- Subir imageens
+- CRUD Autos con imagenes
+- Validar archivos no repetidos
+
+Autos
+a. Confeccionar el mantenimiento de la tabla marcas (altas, bajas y modificaciones (utilizar un GridView)
+b. Confeccionar una página para efectuar el alta de autos.
+c. Consulta de un auto ingresando su patente (mostrar todos los datos, incluido la foto)
+d. Seleccionar de un DropDownList una marca y luego mostrar todas las fotos de autos de dicha marca.
+e. Implementar el borrado de un auto ingresando su patente.
+f. Ingresar un rango de años y luego mostrar todas las fotos de autos en dicho rango.
+
+
+Cookies
+- Cookies
+- Variables de sesion
+- Cookie persistente
+- Sesion del Usuario
+
+Dinamicas
+- imagen dinámica en webform
+- Captcha
+- Graficos de barra/pastel
+
+MaterPage
+- Paginas heredadas (Footers/Headers)
+

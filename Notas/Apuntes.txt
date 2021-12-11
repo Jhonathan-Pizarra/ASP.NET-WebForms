@@ -1,0 +1,48 @@
+Simpre deberíamos seguir este orden:
+
+Crear el proyecto
+Maquetar el diseño de los form (El esqueleto)
+Hacer la conexion (En caso de haber)
+Dar funcionalidades
+Hacer validaciones
+
+1) Recordemos que en Visual 2019 ya no tengo que escoger 
+proyectos MVC distintamente de lso WebForm; sino ahora es el mismo.
+Es decir, un solo proyecto nuevo y desde ahi escoger si lo quiero MVC o no.
+
+Cuando desde el navegador solicitamos una página aspx lo primero que se ejecuta es el evento Page_Load. 
+Para poder definir un método para un evento (boton, enlace, lable) hacemos doble clic sobre el WebForm 
+con lo que inmediatamente se abre el archivo "Algo".aspx.cs donde tenemos dicho método
+
+Para probar el funcionamiento del control RadioButton debemos siempre asociarlos al mismo grupo (GroupName), de modo que
+al elegir uno no se podrá elegir el otro y viceversa.
+Si queremos que alguno de los dos RadioButton aparezca seleccionado por defecto debemos inicializar la propiedad Checked con el valor true.
+
+
+Upropiedad muy importante del control ListBox es SelectionMode, esta admite dos valores: Single o Multiple.
+Single es para una unica eleccion: Por ejemplo un candidato a presidente
+Multiple es para varias elecciones: Por ejemplo una calculadora que sume y reste y muestre los resultados
+
+El control DropDownList permite crear una lista de valores y luego seleccionar solo uno de ellos, es como un combobox en Java
+
+2)En muchas situaciones es necesario almacenar información en el servidor, 
+tenemos dos alternativas, si la cantidad de datos a almacenar es pequeña podemos utilizar un archivo de texto para ello 
+y la otra es almacenar en una base de datos.
+
+A los HyperLink debemos especificrle cual Form.aspx queremos que se redirija esto es en el cuador de propiedades: NavigateUrl
+
+using System.IO; nos permite usar un objeto de la clase StreamWriter 
+y le pasamos en el constructor el path y nombre del archivo a abrir o crear según sea el caso.
+Para obtener el directorio actual utilizamos el método MapPath del objeto Server:
+
+StreamWriter arch = new StreamWriter(Server.MapPath(".") + "/visitas.txt", true);
+
+El valor true que le pasamos en el constructor significa que si el archivo no existe en el servidor en la carpeta especificada se procede a su creación y en el caso que si existe se procede a su apertura y posicionado del puntero de archivo al final del mismo.
+
+
+Bibliografía:
+https://www.tutorialesprogramacionya.com/aspnetya/index.php
+
+Algo interesante que noté es que para el crear si es 
+necesario cargar los datos en el comboox, pero
+para editar no necesito hacer eso "porque ya vendrían precargados"
